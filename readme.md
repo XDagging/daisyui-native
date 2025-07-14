@@ -1,6 +1,8 @@
 # Welcome to Daisyui-Native
 
-![alt text](image.png)
+<!-- ![alt text](image.png) -->
+
+<img src="image.png" alt="tutorial" height="400"/>
 
 Think of this UI library as if daisyui styles and radix component customizability
 
