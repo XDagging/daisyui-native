@@ -1,5 +1,7 @@
 # Welcome to Daisyui-Native
 
+![alt text](image.png)
+
 Think of this UI library as if daisyui styles and radix component customizability
 
 *Note: This is a work in progress. Theme customizability and the styling on certain components are odd but will be updated in the future*
