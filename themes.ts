@@ -2,6 +2,7 @@ import type { ThemeType } from "types";
 
 
 
+// This could maybe become a place to build your themes.
 
 export const LightTheme: ThemeType = {
     "base-100": "#FFFFFF",
@@ -41,3 +42,15 @@ export const LightTheme: ThemeType = {
     borderThickness: 1,
     badgeHeight: 10
 };
+
+
+
+
+
+
+
+
+
+
+
+

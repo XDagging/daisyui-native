@@ -12,8 +12,10 @@ const InputAreaStyles = StyleSheet.create({
     "input-area": {
         borderWidth: LightTheme.borderThickness,
         borderColor: LightTheme.neutral,
-        borderRadius: LightTheme.borderRadius.field,
-        paddingVertical: 10,
+        borderRadius: LightTheme.borderRadius.box,
+        color: LightTheme["base-content"],
+        
+        // paddingVertical: 10,
 
         paddingHorizontal: 8,
         fontSize: 20,
@@ -28,35 +30,36 @@ const InputAreaStyles = StyleSheet.create({
 
 
     "textarea-neutral": {
-        backgroundColor: LightTheme.neutral,
+        borderColor: LightTheme.neutral,
+        // backgroundColor: LightTheme.neutral,
         color: LightTheme["neutral-content"]
     },
     "textarea-primary": {
-        backgroundColor: LightTheme.primary,
+        borderColor: LightTheme.primary,
         color: LightTheme["primary-content"]
     },
     "textarea-secondary": {
-        backgroundColor: LightTheme.secondary,
+        borderColor: LightTheme.secondary,
         color: LightTheme["secondary-content"]
     },
     "textarea-accent": {
-        backgroundColor: LightTheme.accent,
+        borderColor: LightTheme.accent,
         color: LightTheme["accent-content"]
     },
     "textarea-info": {
-        backgroundColor: LightTheme.info,
+        borderColor: LightTheme.info,
         color: LightTheme["info-content"]
     },
     "textarea-success": {
-        backgroundColor: LightTheme.success,
+        borderColor: LightTheme.success,
         color: LightTheme["success-content"]
     },
     "textarea-warning": {
-        backgroundColor: LightTheme.warning,
+        borderColor: LightTheme.warning,
         color: LightTheme["warning-content"]
     }, 
     "textarea-error": {
-        backgroundColor: LightTheme.error,
+        borderColor: LightTheme.error,
         color: LightTheme["error-content"]
     },
     

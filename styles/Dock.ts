@@ -12,7 +12,7 @@ const DockStyles = StyleSheet.create({
     dock: {
         width: "100%",
       
-        position: "absolute",
+        // position: "absolute",
         bottom: 0,
         left: 0,
         zIndex: 50,
@@ -24,7 +24,7 @@ const DockStyles = StyleSheet.create({
         flexDirection: "row",
     
         alignItems: "flex-start",
-        justifyContent: "space-between",
+        // justifyContent: "stretch",
         height: parseRem("1.7rem"),
         
     },
@@ -45,6 +45,8 @@ const DockStyles = StyleSheet.create({
         backgroundColor: LightTheme["base-300"],
         color: LightTheme['base-content']
     }
+
+    
 
 
 

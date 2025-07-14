@@ -28,13 +28,12 @@ type AvatarProps = {
 
 // Tested and works
 export default function AvatarStatus(props: AvatarProps) {
-
-
-
-
     return (
 
-        <View className="" style={props.isActive ? AvatarStyles["avatar-online"] : AvatarStyles["avatar-offline"]}>
+        <View
+            className={`${props.className}`}
+            style={props.isActive ? AvatarStyles["avatar-online"] : AvatarStyles["avatar-offline"]}
+        >
             {props.children}
         </View>
 

@@ -47,13 +47,6 @@ export type ThemeType = {
 
 
 
-export type ButtonProps = {
-        className?: string;
-        // This could be any here I don't know
-        text?: string;
-        onPress?: (e: GestureResponderEvent) => void;
-        children?: React.ReactNode
-}
 
 
 export type CommonProps = {

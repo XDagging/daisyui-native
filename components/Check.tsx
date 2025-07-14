@@ -1,6 +1,6 @@
 import Checkbox from 'expo-checkbox';
 import type { CommonProps } from 'types';
-import { Text, StyleSheet } from 'react-native';
+import { StyleSheet } from 'react-native';
 import { LightTheme } from 'themes';
 
 interface CheckProps extends CommonProps {
@@ -17,6 +17,8 @@ const CheckStyles = StyleSheet.create({
 
 })
 
+// Check needs to be more developed
+
 
 
 export default function Check(props: CheckProps) {
@@ -26,10 +28,10 @@ export default function Check(props: CheckProps) {
 
         <>
         <Checkbox
-        className={props.className}
-        style={CheckStyles.check}
-        value={props.value}
-        onValueChange={props.onChange}
+            className={`${props.className}`}
+            style={CheckStyles.check}
+            value={props.value}
+            onValueChange={props.onChange}
         >
         </Checkbox>
         

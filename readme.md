@@ -1,11 +1,11 @@
-# H1 Welcome to Daisyui-Native
+# Welcome to Daisyui-Native
 
 Think of this UI library as if daisyui styles and radix component customizability
 
 *Note: This is a work in progress. Theme customizability and the styling on certain components are odd but will be updated in the future*
 
 
-## H2 How it works
+## How it works
 
 1. Clone this project
 

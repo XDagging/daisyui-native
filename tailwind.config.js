@@ -1,10 +1,6 @@
-
-
-
-
-
-const themeBeingUsed = {
-    "base-100": "#FFFFFF",
+// This will updated automatically with the cli
+const usedTheme = {
+"base-100": "#FFFFFF",
     "base-200": "#F3F4F6",
     "base-300": "#E5E7EB",
     "base-content": "#1E293B",
@@ -40,10 +36,8 @@ const themeBeingUsed = {
     },
     borderThickness: 1,
     badgeHeight: 10
-};
 
-
-
+}
 
 
 /** @type {import('tailwindcss').Config} */
@@ -54,34 +48,34 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "base-100": themeBeingUsed["base-100"],
-        "base-200": themeBeingUsed["base-200"],
-        "base-300": themeBeingUsed["base-300"],
-        "base-content": themeBeingUsed["base-content"],
+        "base-100": usedTheme["base-100"],
+        "base-200": usedTheme["base-200"],
+        "base-300": usedTheme["base-300"],
+        "base-content": usedTheme["base-content"],
 
-        primary: themeBeingUsed.primary,
-        "primary-content": themeBeingUsed["primary-content"],
+        primary: usedTheme.primary,
+        "primary-content": usedTheme["primary-content"],
 
-        secondary: themeBeingUsed.secondary,
-        "secondary-content": themeBeingUsed["secondary-content"],
+        secondary: usedTheme.secondary,
+        "secondary-content": usedTheme["secondary-content"],
 
-        accent: themeBeingUsed.accent,
-        "accent-content": themeBeingUsed["accent-content"],
+        accent: usedTheme.accent,
+        "accent-content": usedTheme["accent-content"],
 
-        neutral: themeBeingUsed.neutral,
-        "neutral-content": themeBeingUsed["neutral-content"],
+        neutral: usedTheme.neutral,
+        "neutral-content": usedTheme["neutral-content"],
 
-        info: themeBeingUsed.info,
-        "info-content": themeBeingUsed["info-content"],
+        info: usedTheme.info,
+        "info-content": usedTheme["info-content"],
 
-        success: themeBeingUsed.success,
-        "success-content": themeBeingUsed["success-content"],
+        success: usedTheme.success,
+        "success-content": usedTheme["success-content"],
 
-        warning: themeBeingUsed.warning,
-        "warning-content": themeBeingUsed["warning-content"],
+        warning: usedTheme.warning,
+        "warning-content": usedTheme["warning-content"],
 
-        error: themeBeingUsed.error,
-        "error-content": themeBeingUsed["error-content"],
+        error: usedTheme.error,
+        "error-content": usedTheme["error-content"],
       }
     },
     

@@ -52,6 +52,10 @@ const AlertStyles = StyleSheet.create({
     "alert-error": {
         backgroundColor: LightTheme.error,
         color: LightTheme["error-content"]
+    },
+    "alert-accent": {
+        backgroundColor: LightTheme.accent,
+        color: LightTheme["accent-content"]
     }
 
 

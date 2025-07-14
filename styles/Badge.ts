@@ -10,7 +10,7 @@ const badgeStyles = StyleSheet.create({
     badge: {
         alignSelf: "flex-start", 
         color: LightTheme["neutral-content"],
-        borderWidth: LightTheme.borderThickness,
+        // borderWidth: LightTheme.borderThickness,
         // height: LightTheme.badgeHeight,
         borderRadius: LightTheme.borderRadius.box,
 

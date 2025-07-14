@@ -13,6 +13,7 @@ interface SliderProps extends CommonProps {
 
 export default function Slider(props: SliderProps) {
   return (
+    // Come back to this, this doens't look complete
     <SliderComponent
       className={`${props.className} bg-primary`}
       minimumValue={props?.minValue}

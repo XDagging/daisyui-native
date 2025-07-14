@@ -10,22 +10,11 @@ type AvatarProps = {
 }
 
 
-
-
-
-
-
 // avatar image
 
 // avatarPlaceholder
 
 // avatar
-
-
-
-
-
-
 export default function AvatarImage(props: AvatarProps) {
 
 
@@ -33,7 +22,8 @@ export default function AvatarImage(props: AvatarProps) {
 
     return (
 
-        <View className="" style={[AvatarStyles["avatar-img"]]}>
+        <View className={`
+        ${props.className}`} style={AvatarStyles["avatar-img"]}>
             {props.children}
 
 

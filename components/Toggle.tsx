@@ -4,10 +4,18 @@ import type { CommonProps } from "types";
 import { LightTheme } from "themes";
 
 
+type trackColor = {
+    whenFalse: string;
+    whenTrue: string;
+}
+
+
+
 interface ToggleProps extends CommonProps {
     value: boolean;
     onChange: () => void;
-
+    booleanTrackColor: trackColor
+    booleanThumbColor: trackColor
 
 
 }
@@ -24,8 +32,11 @@ export default function Toggle(props: ToggleProps) {
         className={props.className}
         value={props.value}
         onValueChange={props.onChange}
-        trackColor={{false: LightTheme.error, true: LightTheme.primary}}
-        thumbColor={props.value ? LightTheme["secondary-content"] : LightTheme["primary-content"]}
+        trackColor={{
+          false: props.booleanTrackColor ? props.booleanTrackColor.whenFalse : LightTheme["base-100"],
+          true: props.booleanTrackColor ? props.booleanTrackColor.whenTrue : LightTheme["base-300"]
+        }}
+        thumbColor={props.value ? props.booleanThumbColor.whenTrue : props.booleanThumbColor.whenFalse}
 
 
         >

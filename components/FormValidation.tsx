@@ -2,9 +2,9 @@ import { View, NativeSyntheticEvent, TextInputChangeEventData, Text } from "reac
 import type { CommonProps } from "types"
 import { useState, useEffect } from "react"
 import InputArea from "./InputArea"
-import { isAnimationTerminatingCalculation } from "react-native-reanimated/lib/typescript/animation/springUtils"
+// import { isAnimationTerminatingCalculation } from "react-native-reanimated/lib/typescript/animation/springUtils"
 import { isEmail, isNumber } from "styles/Universal"
-import { bracketSameLine } from "prettier.config"
+// import { bracketSameLine } from "prettier.config"
 import Button from "./Button"
 import { forwardRef, useImperativeHandle } from "react";
 type InputType = {
@@ -12,6 +12,8 @@ type InputType = {
     minLength?: number
     required?: boolean,
     multiLine?: boolean,
+    placeholder?: string,
+    variant?: "primary" | "secondary" | "accent" | "info" | "success" | "warning" | "error";
 
     inputChar: "email" | "number" | "phoneNumber" | "string" | "boolean"
 
@@ -190,16 +192,18 @@ const FormValidation = forwardRef(function FormValidation(
 
   return (
     <>
-      <View className={`${props.className} `}>
-        <>
+      <View className={`${props.className} text-center`}>
+        
           {fullForm.map((value, i) => (
             <InputArea
+              className="text-center"
+              placeholder={value.placeholder ? value.placeholder : ""}
+              variant={`${value.variant ? value.variant : "info"}`}
               key={i}
               onChange={(e) => changeFormData(e, i)}
               multiLine={value.maxLength && value?.maxLength > 25 ? true : false}
             />
           ))}
-        </>
       </View>
     </>
   );

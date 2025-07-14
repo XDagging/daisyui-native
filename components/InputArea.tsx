@@ -1,9 +1,10 @@
-import { NativeSyntheticEvent, TextInput, TextInputChangeEventData } from "react-native";
+import { TextInput } from "react-native";
 import InputAreaStyles from "styles/InputArea";
 
 
 
 type InputAreaProps = {
+    variant: "primary" | "secondary" | "accent" | "info" | "success" | "warning" | "error";
     placeholder?: string;
     multiLine?: boolean;
     className?: string;
@@ -12,12 +13,18 @@ type InputAreaProps = {
 
 
 export default function InputArea(props: InputAreaProps) {
-
-console.log(InputAreaStyles["input-area"]);
-console.log(InputAreaStyles["textarea-neutral"]);
-
     return (
-        <TextInput onChangeText={(e) => props.onChange(e)} className={`${props.className}`} placeholder={props.placeholder} multiline={props.multiLine} style={[InputAreaStyles["input-area"], InputAreaStyles["textarea-secondary"]]} />
+        <TextInput 
+        onChangeText={(e) => props.onChange(e)} 
+        style={[InputAreaStyles["input-area"], (InputAreaStyles as Record<string, any>)[`textarea-${props.variant}`]]}
+        className={`
+            ${props.className}`
+
+        }
+        placeholder={props.placeholder} 
+        multiline={props.multiLine} 
+        
+        />
     
     )
 
