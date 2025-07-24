@@ -160,10 +160,6 @@ export default function App() {
       </Carousel>
 
        
-
-
-      
-          <Text>asdf</Text>
     
 
               </ScrollView>

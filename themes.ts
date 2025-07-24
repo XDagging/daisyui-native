@@ -4,6 +4,10 @@ import type { ThemeType } from "types";
 
 // This could maybe become a place to build your themes.
 
+
+
+// Light Theme is the default theme. You can still changes these values when necessary
+
 export const LightTheme: ThemeType = {
     "base-100": "#FFFFFF",
     "base-200": "#F3F4F6",
