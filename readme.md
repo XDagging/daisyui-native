@@ -4,7 +4,7 @@
 
 <img src="image.png" alt="tutorial" height="400"/>
 
-Think of this UI library as if daisyui styles and radix component customizability
+Think of this UI library as if daisyui styles and radix component customizability had a baby
 
 *Note: This is a work in progress. Theme customizability and the styling on certain components are odd but will be updated in the future*
 
